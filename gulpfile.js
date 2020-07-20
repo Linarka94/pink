@@ -6,7 +6,7 @@ let fs = require('fs');
 let path = {
   build: {
     html: project_folder + '/',
-    css: project_folder + '/styles/',
+    css: project_folder + '/',
     js: project_folder + '/js/',
     img: project_folder + '/img/',
     fonts: project_folder + '/fonts/',
