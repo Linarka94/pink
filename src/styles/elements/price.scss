@@ -1,0 +1,221 @@
+.price {
+  margin-top: 230px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-image: url('/img/info-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+    padding-bottom: 70px;
+    padding-top: 100px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 30px;
+    padding-top: 110px;
+    padding-bottom: 50px;
+  } 
+}
+
+.prices {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  width: 75%;
+  height: 100px;
+
+  @media (max-width: 768px) {
+    height: 80px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+  
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #283645;
+    text-transform: uppercase;
+    margin-right: 2px;
+    width: 33.333%;
+    position: relative;
+    overflow: hidden;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+      width: 100%;
+      height: 100px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--hit {
+      position: absolute;
+      transform: rotate(-45deg);
+      top: 20px;
+      left: -40px;
+      background-color: #d22856;
+      font-size: 14px;
+      padding: 5px 60px;
+
+      @media (max-width: 768px) {
+        top: 5px;
+        left: -55px;
+      }
+    }
+
+    &--usd {
+      margin-top: 10px;
+      font-weight: 300;
+      font-size: 20px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__support-wrapper {
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &__filters {
+    list-style: none;
+    background-color: #ffffff;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-child &-item--title {
+      border-top: 2px solid #e5e5e5;
+    }
+    
+    &-item {
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #e5e5e5;
+      border-top: none;
+      border-right: none;
+
+      &:last-child {
+        border-right: 2px solid #e5e5e5;
+      }
+
+      &--title {
+        align-items: flex-start;
+        padding-left: 25px;
+
+        @media (max-width: 768px) {
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
+// TODO price__slider
+.price-slider {
+  display: none;
+  position: relative;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    display: flex;
+  }
+
+  &__inner {
+    overflow: hidden;
+  }
+
+  &__slides {
+    width: 270%;
+    transition: transform 0.8s ease;
+  }
+
+  &__item {
+    float: left;
+    width: 33.333%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+
+    &:first-of-type .price-slider__filters {
+      border-left: 2px solid #e5e5e5;
+    }
+  }
+
+  &__filter {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+
+    &-title {
+      text-transform: uppercase;
+    }
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border: 2px solid #e5e5e5;
+    padding-left: 20px;
+    padding-right: 15px;
+    border-left: 0;
+
+    &:first-child {
+      border-top: 0;
+      border-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      border-bottom: 0;
+    }
+  }
+}
+// TODO price__slider-button
+.price-button-1:checked ~ .price-slider__inner .price-slider__slides {
+  transform: translate(0%);
+}
+
+.price-button-2:checked ~ .price-slider__inner .price-slider__slides {
+  transform: translate(-31.5%);
+}
+
+.price-button-3:checked ~ .price-slider__inner .price-slider__slides {
+  transform: translate(-63%);
+}

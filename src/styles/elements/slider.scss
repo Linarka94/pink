@@ -1,0 +1,136 @@
+.slideshow {
+  margin-top: 50px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.slides {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 700px;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s ease;
+  text-align: center;
+
+  &--show {
+    z-index: 2;
+    opacity: 1;
+  }
+}
+
+.slideshow__buttons {
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 20px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &--control {
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    opacity: 0.6;
+    padding: 10px 10px;
+    width: 50px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      background-color: rgba(61, 61, 61, 0.3);
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  display: none;
+  flex-direction: column-reverse;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__citates {
+    overflow: hidden;
+  }
+
+  &__slides {
+    width: 300%;
+    transition: transform 0.8s ease;
+  }
+
+  &__item {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    width: 33.333%;
+    float: left;
+    // height: 240px;
+
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__control {
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  &__label {
+    display: inline-block;
+    margin: 0 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+
+.toggle-1:checked ~ .slider__control .label-1,
+.toggle-2:checked ~ .slider__control .label-2,
+.toggle-3:checked ~ .slider__control .label-3 {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+.toggle-1:checked ~ .slider__citates .slider__slides {
+  transform: translate(0);
+}
+
+.toggle-2:checked ~ .slider__citates .slider__slides {
+  transform: translate(-33.333%);
+}
+
+.toggle-3:checked ~ .slider__citates .slider__slides {
+  transform: translate(-66.666%);
+}
