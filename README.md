@@ -27,4 +27,4 @@ $ gulp build
 * Use `gulp` to run server in dev mode.
 
 ### Live Demo
-Pink application is deployed on Github pages and aviable by link: [pink](https://linarka94.github.io/).
+Pink application is deployed on Github pages and aviable by link: [pink](https://linarka94.github.io/pink/).
