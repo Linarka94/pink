@@ -1,8 +1,0 @@
-node_modules
-dist
-
-### OSX ###
-.DS_Store
-.AppleDouble
-.LSOverride
-.vscode
