@@ -1,6 +1,6 @@
 // slideshow
 
-let slides = document.querySelectorAll('.slide');
+let slides = document.querySelectorAll('.reviews__slide');
 let currentSlide = 0;
 let slideInterval = setInterval(nextSlide, 3000);
 let next = document.querySelector('.next');
@@ -15,9 +15,9 @@ function previousSlide() {
 };
 
 function goToSlide(n) {
-    slides[currentSlide].className = 'slide';
+    slides[currentSlide].className = 'reviews__slide';
     currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].className = 'slide slide--show';
+    slides[currentSlide].className = 'reviews__slide reviews__slide--show';
 };
 
 next.onclick = function() {

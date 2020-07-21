@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
   <link rel="stylesheet" href="app.css">
-  <base href="/pink/">
   <meta charset="UTF-8">
+  <base href="/pink/">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,9 +18,9 @@
             <img class="header-logo__img" src="img/PINK.png" alt="pink logo">
         </a>
         <nav class="nav">
-          <a href="index.html" class="nav__link active">Главная</a>
-          <a href="photos.html" class="nav__link">Фотографии</a>
-          <a href="contest.html" class="nav__link">Конкурс</a>
+          <a href="index.html" class="nav__link nav__link--active">Главная</a>
+          <a href="#" class="nav__link">Фотографии</a>
+          <a href="#" class="nav__link">Конкурс</a>
           <a href="https://htmlacademy.ru" class="nav__link">HTML Academy</a>
         </nav>
         <button type="button" class="burger-menu">
@@ -106,12 +106,11 @@
       </div>
     </div>
   </section>
-  <article class="effect">
+  <section class="effect">
     <div class="container">
       <div class="effect__wrapper">
         <div class="effect__timer">
-          <img class="effect__timer--img" src="img/timer.png" alt="Timer">
-            <span class="effect__timer--24">24</span>
+          24
         </div>
         <div class="effect__text">
           <h3 class="effect__title">Эффект на 24 часа!</h3>
@@ -124,66 +123,13 @@
         </div>
       </div>
     </div>
-  </article>
-  <section>
-    <div class="container">
-      <div class="reviews">
-        <img class="reviews__quotes-img" src="img/quotes.png" alt="Citate logo">
-        <div class="slideshow">
-          <ul class="slides">
-            <li class="slide slide--show">
-              <q class="reviews__citate">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
-              <p class="reviews__author">
-                Николай Петров
-              </p>
-              <p class="reviews__author--bio">
-                25 лет, водитель трамвая
-              </p>
-            </li>
-
-            <li class="slide">
-              <q class="reviews__citate">Это приложение best of the best.</q>
-              <p class="reviews__author">
-                Иван Иванов
-              </p>
-              <p class="reviews__author--bio">
-                28 лет, водитель автобуса
-              </p>
-            </li>
-
-            <li class="slide">
-              <q class="reviews__citate">Это приложение лучшее, что я видел в своей жизни.</q>
-              <p class="reviews__author">
-                Петр Николаев
-              </p>
-              <p class="reviews__author--bio">
-                29 лет, водитель автомобиля
-              </p>
-            </li>
-          </ul>
-          <div class="slideshow__buttons">
-            <button class="slideshow__buttons--control previous" type="button">
-              <img src="img/left-arrow.png" alt="left-arrow">
-            </button>
-            <button class="slideshow__buttons--control next" type="button">
-              <img src="img/right-arrow.png" alt="right-arrow">
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slider"> <!-- for mobile devices -->
-      <input type="radio" name="slider__toggle" class="slider__toggle toggle-1" id="button-1" checked>
-      <input type="radio" name="slider__toggle" class="slider__toggle toggle-2" id="button-2">
-      <input type="radio" name="slider__toggle" class="slider__toggle toggle-3" id="button-3">
-      <div class="slider__control">
-        <label for="button-1" class="slider__label label-1"></label>
-        <label for="button-2" class="slider__label label-2"></label>
-        <label for="button-3" class="slider__label label-3"></label>
-      </div>
-      <div class="slider__citates">
-        <div class="slider__slides">
-          <div class="slider__item">
+  </section>
+  <section class="container">
+    <div class="reviews">
+      <img class="reviews__quotes-img" src="img/quotes.png" alt="Citate logo">
+      <div class="reviews__slideshow">
+        <ul class="reviews__slides">
+          <li class="reviews__slide reviews__slide--show">
             <q class="reviews__citate">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
             <p class="reviews__author">
               Николай Петров
@@ -191,8 +137,9 @@
             <p class="reviews__author--bio">
               25 лет, водитель трамвая
             </p>
-          </div>
-          <div class="slider__item">
+          </li>
+
+          <li class="reviews__slide">
             <q class="reviews__citate">Это приложение best of the best.</q>
             <p class="reviews__author">
               Иван Иванов
@@ -200,8 +147,9 @@
             <p class="reviews__author--bio">
               28 лет, водитель автобуса
             </p>
-          </div>
-          <div class="slider__item">
+          </li>
+
+          <li class="reviews__slide">
             <q class="reviews__citate">Это приложение лучшее, что я видел в своей жизни.</q>
             <p class="reviews__author">
               Петр Николаев
@@ -209,7 +157,56 @@
             <p class="reviews__author--bio">
               29 лет, водитель автомобиля
             </p>
-          </div>
+          </li>
+        </ul>
+        <div class="reviews__slideshow-buttons">
+          <button class="reviews__slideshow-buttons--control previous" type="button">
+            <img src="img/left-arrow.png" alt="left-arrow">
+          </button>
+          <button class="reviews__slideshow-buttons--control next" type="button">
+            <img src="img/right-arrow.png" alt="right-arrow">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews__slider slider"> <!-- for mobile devices -->
+    <input type="radio" name="slider__toggle" class="slider__toggle slider__toggle--toggle-1" id="button-1" checked>
+    <input type="radio" name="slider__toggle" class="slider__toggle slider__toggle--toggle-2" id="button-2">
+    <input type="radio" name="slider__toggle" class="slider__toggle slider__toggle--toggle-3" id="button-3">
+    <div class="slider__control">
+      <label for="button-1" class="slider__label slider__label--label-1"></label>
+      <label for="button-2" class="slider__label slider__label--label-2"></label>
+      <label for="button-3" class="slider__label slider__label--label-3"></label>
+    </div>
+    <div class="slider__citates">
+      <div class="slider__slides">
+        <div class="slider__item">
+          <q class="reviews__citate">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+          <p class="reviews__author">
+            Николай Петров
+          </p>
+          <p class="reviews__author--bio">
+            25 лет, водитель трамвая
+          </p>
+        </div>
+        <div class="slider__item">
+          <q class="reviews__citate">Это приложение best of the best.</q>
+          <p class="reviews__author">
+            Иван Иванов
+          </p>
+          <p class="reviews__author--bio">
+            28 лет, водитель автобуса
+          </p>
+        </div>
+        <div class="slider__item">
+          <q class="reviews__citate">Это приложение лучшее, что я видел в своей жизни.</q>
+          <p class="reviews__author">
+            Петр Николаев
+          </p>
+          <p class="reviews__author--bio">
+            29 лет, водитель автомобиля
+          </p>
         </div>
       </div>
     </div>
@@ -223,8 +220,8 @@
               1,99 USD
             </p>
         </div>
-        <div class="prices__title">
-          Стандарт <div class="prices__title--hit">Хит</div>
+        <div class="prices__title prices__title--hit">
+          Стандарт
           <p class="prices__title--usd">
             3,99 USD
           </p>
@@ -267,79 +264,79 @@
       </div>
     </div>
 
-    <div class="price-slider"> <!-- for mobile devices -->
-      <input type="radio" name="price-slider__toggle" class="slider__toggle toggle-1 price-button-1" id="price-button-1">
-      <input type="radio" name="price-slider__toggle" class="slider__toggle toggle-2 price-button-2" id="price-button-2" checked>
-      <input type="radio" name="price-slider__toggle" class="slider__toggle toggle-3 price-button-3" id="price-button-3">
+    <div class="price__slider"> <!-- for mobile devices -->
+      <input type="radio" name="price__slider-toggle" class="slider__toggle slider__toggle--toggle-1 price__slider-button--1" id="price__button-1">
+      <input type="radio" name="price__slider-toggle" class="slider__toggle slider__toggle--toggle-2 price__slider-button--2" id="price__button-2" checked>
+      <input type="radio" name="price__slider-toggle" class="slider__toggle slider__toggle--toggle-3 price__slider-button--3" id="price__button-3">
       <div class="slider__control">
-        <label for="price-button-1" class="slider__label label-1"></label>
-        <label for="price-button-2" class="slider__label label-2"></label>
-        <label for="price-button-3" class="slider__label label-3"></label>
+        <label for="price__button-1" class="slider__label slider__label--label-1"></label>
+        <label for="price__button-2" class="slider__label slider__label--label-2"></label>
+        <label for="price__button-3" class="slider__label slider__label--label-3"></label>
       </div>
-      <div class="price-slider__inner">
-        <div class="price-slider__slides">
-          <div class="price-slider__item">
+      <div class="price__slider-inner">
+        <div class="price__slider-slides">
+          <div class="price__slider-item">
             <div class="prices__title">
               База
               <p class="prices__title--usd">
                 1,99 USD
               </p>
             </div>
-            <ul class="price-slider__filter">
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Розовый фильтр</p>
+            <ul class="price__slider-filter">
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Розовый фильтр</p>
                 <img src="img/yes.png" alt="Support">
               </li>
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Комментарии</p>
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Комментарии</p>
                 <img src="img/no.png" alt="Support">
               </li>
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Смайлики</p>
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Смайлики</p>
                 <img src="img/no.png" alt="Support">
               </li>
             </ul>
           </div>
-          <div class="price-slider__item">
-            <div class="prices__title">
-              Стандарт <div class="prices__title--hit">Хит</div>
+          <div class="price__slider-item">
+            <div class="prices__title prices__title--hit">
+              Стандарт
               <p class="prices__title--usd">
                 3,99 USD
               </p>
             </div>
-            <ul class="price-slider__filter">
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Розовый фильтр</p>
+            <ul class="price__slider-filter">
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Розовый фильтр</p>
                 <img src="img/yes.png" alt="Support">
               </li>
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Комментарии</p>
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Комментарии</p>
                 <img src="img/yes.png" alt="Support">
               </li>
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Смайлики</p>
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Смайлики</p>
                 <img src="img/no.png" alt="Support">
               </li>
             </ul>
           </div>
-          <div class="price-slider__item">
+          <div class="price__slider-item">
             <div class="prices__title">
               Анлим
               <p class="prices__title--usd">
                 9,99 USD
               </p>
             </div>
-            <ul class="price-slider__filter">
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Розовый фильтр</p>
+            <ul class="price__slider-filter">
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Розовый фильтр</p>
                 <img src="img/yes.png" alt="Support">
               </li>
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Комментарии</p>
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Комментарии</p>
                 <img src="img/yes.png" alt="Support">
               </li>
-              <li class="price-slider__filters">
-                <p class="price-slider__filter-title">Смайлики</p>
+              <li class="price__slider-filters">
+                <p class="price__filter-title">Смайлики</p>
                 <img src="img/yes.png" alt="Support">
               </li>
             </ul>
@@ -356,7 +353,7 @@
       <div class="contacts__wrapper">
         <div class="contacts__data">
           <p class="contacts__title">Звоните:</p>
-          <a href="tel:+78125556666" class="contacts__link" title="Позвнить?">
+          <a href="tel:+78125556666" class="contacts__link" title="Позвонить?">
             +7 (812) 555-66-66
           </a>
         </div>
@@ -383,40 +380,10 @@
       </a>
       <div class="footer__social">
         <a href="#" class="footer__social-link">
-          <svg xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="19px" height="15px">
-          <!-- <defs>
-          <filter id="Filter_0">
-              <feFlood flood-color="rgb(210, 40, 86)" flood-opacity="1" result="floodOut" />
-              <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
-              <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
-          </filter>
-
-          </defs>
-          <g filter="url(#Filter_0)"> -->
-          <path fill-rule="evenodd" fill="rgb(210, 40, 86)"
-          d="M18.353,2.483 C17.698,2.768 16.994,2.960 16.255,3.047 C17.009,2.604 17.588,1.901 17.861,1.063 C17.155,1.475 16.373,1.773 15.541,1.934 C14.875,1.237 13.925,0.802 12.874,0.802 C10.857,0.802 9.220,2.407 9.220,4.386 C9.220,4.667 9.253,4.941 9.315,5.203 C6.279,5.054 3.587,3.627 1.785,1.458 C1.470,1.988 1.290,2.603 1.290,3.260 C1.290,4.504 1.935,5.601 2.915,6.244 C2.316,6.225 1.753,6.064 1.260,5.795 C1.260,5.810 1.260,5.825 1.260,5.840 C1.260,7.577 2.519,9.026 4.191,9.355 C3.884,9.437 3.561,9.481 3.228,9.481 C2.993,9.481 2.764,9.459 2.541,9.417 C3.006,10.841 4.355,11.877 5.954,11.906 C4.703,12.867 3.128,13.441 1.416,13.441 C1.121,13.441 0.830,13.424 0.545,13.391 C2.161,14.408 4.082,15.001 6.145,15.001 C12.866,15.001 16.541,9.539 16.541,4.802 C16.541,4.647 16.537,4.492 16.530,4.338 C17.244,3.832 17.863,3.201 18.353,2.483 Z"/>
-          <!-- </g> -->
-          </svg>
+          <img src="img/twitter.png" alt="Twitter page">
         </a>
         <a href="#" class="footer__social-link">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="9px" height="19px">
-            <!-- <defs>
-            <filter id="Filter_0">
-                <feFlood flood-color="rgb(210, 40, 86)" flood-opacity="1" result="floodOut" />
-                <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
-                <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
-            </filter>
-
-            </defs> -->
-            <!-- <g filter="url(#Filter_0)"> -->
-            <path fill-rule="evenodd"  fill="rgb(210, 40, 86)"
-            d="M5.544,18.517 L1.859,18.517 L1.859,9.609 L0.017,9.609 L0.017,6.538 L1.859,6.538 L1.859,4.695 C1.859,2.191 2.899,0.701 5.852,0.701 L8.312,0.701 L8.312,3.772 L6.775,3.772 C5.625,3.772 5.549,4.201 5.549,5.002 L5.544,6.538 L8.330,6.538 L8.004,9.609 L5.544,9.609 L5.544,18.517 Z"/>
-            <!-- </g> -->
-          </svg>
+          <img src="img/facebook.png" alt="Facebook page">
         </a>
         <a href="#" class="footer__social-link">
           <img src="img/youtube.png" alt="Youtube channel">
@@ -432,6 +399,6 @@
       </div>
     </div>
   </footer>
-  <script src="/js/script.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
