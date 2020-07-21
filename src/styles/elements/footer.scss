@@ -15,6 +15,7 @@
 
   &__logo-link {
     text-decoration: none;
+    transition: opacity 0.3s ease;
     
     &:active {
       opacity: 0.3;

@@ -1,5 +1,10 @@
 .contacts {
   background-color: #ffffff;
+  padding-top: 75px;
+
+  @media (max-width: 480px) {
+    padding-top: 45px;
+  }
 
   &--title {
     max-width: 470px;

@@ -17,35 +17,27 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
+
   &__timer {
-    margin-top: 15px;
     margin-right: 75px;
-    position: relative;
+    padding: 85px;
     display: flex;
-    flex-direction: column;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
-    max-width: 40%;
-  }
-
-  &__timer--img {
-    object-fit: cover;
-  }
-
-  &__timer--24 {
-    position: absolute;
-    display: block;
-    color: #d22856;
+    background-image: url('/img/timer.png');
+    background-repeat: no-repeat;
     font-size: 120px;
+    color: #d22856;
     font-weight: 700;
-    top: 120px;
+    line-height: 1.7;
 
     @media (max-width: 768px) {
-      font-size: 96px;
-      top: 70px;
+     font-size: 96px;
+     padding: 65px;
+     background-size: contain;
     }
   }
 

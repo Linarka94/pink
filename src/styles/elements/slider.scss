@@ -1,4 +1,4 @@
-.slideshow {
+.reviews__slideshow {
   margin-top: 50px;
   position: relative;
 
@@ -7,7 +7,7 @@
   }
 }
 
-.slides {
+.reviews__slides {
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.slide {
+.reviews__slide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -30,7 +30,7 @@
   }
 }
 
-.slideshow__buttons {
+.reviews__slideshow-buttons {
   z-index: 10;
   width: 100%;
   position: absolute;
@@ -61,9 +61,12 @@
   }
 }
 
+.reviews__slider {
+  display: none;
+}
+
 .slider {
   position: relative;
-  display: none;
   flex-direction: column-reverse;
 
   @media (max-width: 768px) {
@@ -89,7 +92,6 @@
     text-align: center;
     width: 33.333%;
     float: left;
-    // height: 240px;
 
     @media (max-width: 480px) {
       display: flex;
@@ -116,21 +118,21 @@
   }
 }
 
-.toggle-1:checked ~ .slider__control .label-1,
-.toggle-2:checked ~ .slider__control .label-2,
-.toggle-3:checked ~ .slider__control .label-3 {
+.slider__toggle--toggle-1:checked ~ .slider__control .slider__label--label-1,
+.slider__toggle--toggle-2:checked ~ .slider__control .slider__label--label-2,
+.slider__toggle--toggle-3:checked ~ .slider__control .slider__label--label-3 {
   background-color: #ffffff;
   box-shadow: 0 0 0 3px #283645;
 }
 
-.toggle-1:checked ~ .slider__citates .slider__slides {
+.slider__toggle--toggle-1:checked ~ .slider__citates .slider__slides {
   transform: translate(0);
 }
 
-.toggle-2:checked ~ .slider__citates .slider__slides {
+.slider__toggle--toggle-2:checked ~ .slider__citates .slider__slides {
   transform: translate(-33.333%);
 }
 
-.toggle-3:checked ~ .slider__citates .slider__slides {
+.slider__toggle--toggle-3:checked ~ .slider__citates .slider__slides {
   transform: translate(-66.666%);
 }
