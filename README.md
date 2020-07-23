@@ -10,7 +10,7 @@
   <a href="http://sass-lang.com/">
     <img src="https://user-images.githubusercontent.com/28712079/35426885-40e16cea-0277-11e8-9789-639bfeea8587.png" alt="Sass" />
   </a>
-  <p>This project released on NodeJS, Gulp, Sass.</p>
+  <p>This project released on NodeJS, Gulp, Sass, class names by BEM.</p>
 </div>
 
 
