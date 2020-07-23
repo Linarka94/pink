@@ -6,8 +6,18 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0 auto;
+  text-align: center;
+    
+  @media (max-width: 768px) {
+    z-index: 3;
+  }
 
   @media (max-width: 480px) {
+    background-color: #283645;
     padding-top: 400px;
   }
 
@@ -29,22 +39,6 @@
       transform: translate(-50%,-50%);
       width: 320px;
       height: 290px;
-    }
-  }
-  
-  &__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin: 0 auto;
-    text-align: center;
-    
-    @media (max-width: 768px) {
-      z-index: 3;
-    }
-
-    @media (max-width: 480px) {
-      background-color: #283645;
     }
   }
   

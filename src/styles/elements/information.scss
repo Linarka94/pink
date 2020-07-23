@@ -8,7 +8,7 @@
 }
 
 
-.features__wrapper {
+.features {
   background-color: #f2f2f2;
   margin-top: 70px;
   width: 100%;
@@ -24,140 +24,122 @@
     height: 0;
     border-bottom: 100px solid #f2f2f2;
     border-left: 100vw solid white;
-  }
-}
-
-.features {
-
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    padding-top: 50px;
-    padding-bottom: 40px;
-  }
-  
-  @media (max-width: 480px) {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0;
-  }
-
-  &__img {
-    width: 33%;
 
     @media (max-width: 768px) {
-      width: 100%;
-      object-fit: cover;
-
-      &:not(:last-child) {
-        display: none;
-      }
+      border-bottom: 50px solid #f2f2f2;
     }
 
     @media (max-width: 480px) {
-      margin-top: 40px;
+      border-bottom: 30px solid #f2f2f2;
     }
+  }
 
-    &-wrapper {
+  &--flex {
+    @media (max-width: 768px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
 
-      @media (max-width: 768px) {
-        height: 300px;
-        overflow: hidden;
-        align-items: flex-start;
-      }
+      &::before {
+        // content: url('/img/Iphone-before.png');
+        content: '';
+        background-image: url('/img/Iphone-before.png');
+        background-repeat: no-repeat;
+        width: 268px;
+        height: 484px;
 
-      @media (max-width: 480px) {
-        height: 320px;
-        overflow: hidden;
-        align-items: flex-start;
+        @media (max-width: 480px) {
+          margin-top: 45px;
+          width: 160px;
+          height: 280px;
+          background-size: contain;
+        }
       }
     }
-  }
   
-  &__text {
+    @media (max-width: 480px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__list {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 480px) {
+      align-items: center;
+      margin-top: 70px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     @media (max-width: 768px) {
-      width: 50%;
-      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 40px;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
 
     @media (max-width: 480px) {
-      width: 100%;
-    }
-
-    &-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      margin-top: 35px;
+    }
+  }
+
+  &__img {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    color: #000000;
+    max-width: 230px;
+    text-align: center;
+    margin-top: -150px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 280px;
+    }
+  }
+
+  &__description {
+    margin-top: 25px;
+    max-width: 245px;
+    line-height: 1.7;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      margin-top: 15px;
+      text-align: left;
+      max-width: 320px;
+    }
+
+    @media (max-width: 480px) {
       text-align: center;
-      width: 33%;
-      position: relative;
-
-      @media (max-width: 768px) {
-        width: 100%;
-        align-items: flex-start;
-
-        &:first-child .features__text-title {
-          margin-top: 0;
-        }
-      }
-
-      @media (max-width: 480px) {
-        align-items: center;
-      }
-    }
-
-    &-title,
-    &-subtitle {
-      position: absolute;
-      top: -150px;
-
-      @media (max-width: 768px) {
-        position: relative;
-        top: 0;
-        left: 0;
-      }
-    }
-
-    &-title {
-      font-size: 30px;
-      color: #000000;
-      max-width: 230px;
-
-      @media (max-width: 768px) {
-        font-size: 18px;
-        margin-top: 30px;
-      }
-
-      @media (max-width: 480px) {
-        max-width: 280px;
-      }
-    }
-
-    &-subtitle {
-      margin-top: 25px;
-      max-width: 245px;
-      top: -80px;
-      line-height: 1.7;
-
-      @media (max-width: 768px) {
-        margin-top: 15px;
-        text-align: left;
-        max-width: 320px;
-      }
-
-      @media (max-width: 480px) {
-        text-align: center;
-      }
     }
   }
 }

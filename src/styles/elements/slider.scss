@@ -42,22 +42,22 @@
   @media (max-width: 768px) {
     display: none;
   }
+}
 
-  &--control {
-    border: none;
-    cursor: pointer;
-    background-color: #ffffff;
-    opacity: 0.6;
-    padding: 10px 10px;
-    width: 50px;
-    transition: all 0.3s ease;
-    border-radius: 5px;
+.reviews__slideshow-button {
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  opacity: 0.6;
+  padding: 10px 10px;
+  width: 50px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
 
-    &:hover,
-    &:focus {
-      opacity: 1;
-      background-color: rgba(61, 61, 61, 0.3);
-    }
+  &:hover,
+  &:focus {
+    opacity: 1;
+    background-color: rgba(61, 61, 61, 0.3);
   }
 }
 

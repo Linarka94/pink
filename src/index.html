@@ -35,91 +35,82 @@
     </div>
   </header>
   <section class="home">
-    <div class="home__wrapper">
-      <div class="container">
-        <div class="home__text">
-          <h1 class="home__title">Взгляните на жизнь иначе!</h1>
-          <a href="#" class="home__download">
-            Скачать приложение
+    <div class="container">
+      <div class="home__text">
+        <h1 class="home__title">Взгляните на жизнь иначе!</h1>
+        <a href="#" class="home__download">
+          Скачать приложение
+        </a>
+        <div class="home__platforms">
+          <a href="#" class="home__platforms-link">
+            <img src="/img/apple-logo.png" alt="Apple" class="home__os__img">
           </a>
-          <div class="home__platforms">
-            <a href="#" class="home__platforms-link">
-              <img src="/img/apple-logo.png" alt="Apple" class="home__os__img">
-            </a>
-            <a href="#" class="home__platforms-link">
-              <img src="/img/android-logo.png" alt="Android" class="home__os__img">
-            </a>
-            <a href="#" class="home__platforms-link">
-              <img src="/img/microsoft-logo.png" alt="Windows Phone" class="home__os__img">
-            </a>
-          </div>
-          <p class="home__note">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+          <a href="#" class="home__platforms-link">
+            <img src="/img/android-logo.png" alt="Android" class="home__os__img">
+          </a>
+          <a href="#" class="home__platforms-link">
+            <img src="/img/microsoft-logo.png" alt="Windows Phone" class="home__os__img">
+          </a>
         </div>
-        <div class="home__promo"></div>
+        <p class="home__note">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
       </div>
     </div>
   </section>
   <section class="information">
     <div class="container">
       <h2 class="title">
-        Устали от серости мегаполиса? <span class="title--mobile"></span> Нам есть, что вам <br> предложить!
+        Устали от серости мегаполиса? <span class="title--margin-top">Нам есть, что вам предложить!</span>
       </h2>
     </div>
-    <div class="features__wrapper">
-      <div class="container">
-        <div class="features">
-          <div class="features__img-wrapper">
+    <div class="features">
+      <div class="container features--flex">
+        <div class="features__list">
+          <div class="features__item">
             <img class="features__img" src="/img/info-ip1.png" alt="iPhone grey">
+            <h3 class="features__title">
+              Поднимает настроение
+            </h3>
+            <p class="features__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов! 
+            </p>
+          </div> 
+          <div class="features__item">
             <img class="features__img" src="/img/info-ip2.png" alt="iPhone pink">
+            <h3 class="features__title">
+              Меняет мир вокруг
+            </h3>
+            <p class="features__description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </div>  
+          <div class="features__item">
             <img class="features__img" src="/img/info-ip3.png" alt="iPhone pink smile">
-          </div>
-          <div class="features__text">
-            <div class="features__text-item">
-              <h3 class="features__text-title">
-                Поднимает настроение
-              </h3>
-              <p class="features__text-subtitle">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов! 
-              </p>
-            </div>
-            <div class="features__text-item">
-              <h3 class="features__text-title">
-                Меняет мир вокруг
-              </h3>
-              <p class="features__text-subtitle">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </p>
-            </div>
-            <div class="features__text-item">
-              <h3 class="features__text-title">
-                Заводит новых друзей
-              </h3>
-              <p class="features__text-subtitle">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </div>
-          </div>
+            <h3 class="features__title">
+              Заводит новых друзей
+            </h3>
+            <p class="features__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </div>   
         </div>
       </div>
     </div>
   </section>
   <section class="effect">
-    <div class="container">
-      <div class="effect__wrapper">
-        <div class="effect__timer">
-          24
-        </div>
-        <div class="effect__text">
-          <h3 class="effect__title">Эффект на 24 часа!</h3>
-          <p class="effect__subtitle">
-            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a href="#" class="effect__link">
-            Узнать больше об исследовании
-          </a>
-        </div>
+    <div class="container effect--flex">
+      <div class="effect__timer">
+        24
+      </div>
+      <div class="effect__text">
+        <h3 class="effect__title">Эффект на 24 часа!</h3>
+        <p class="effect__subtitle">
+          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+        </p>
+        <a href="#" class="effect__link">
+          Узнать больше об исследовании
+        </a>
       </div>
     </div>
   </section>
@@ -159,10 +150,10 @@
           </li>
         </ul>
         <div class="reviews__slideshow-buttons">
-          <button class="reviews__slideshow-buttons--control previous" type="button">
+          <button class="reviews__slideshow-button previous" type="button">
             <img src="/img/left-arrow.png" alt="left-arrow">
           </button>
-          <button class="reviews__slideshow-buttons--control next" type="button">
+          <button class="reviews__slideshow-button next" type="button">
             <img src="/img/right-arrow.png" alt="right-arrow">
           </button>
         </div>
@@ -233,31 +224,31 @@
         </div>
       </div>
       <div class="prices__support-wrapper">
-        <ul class="prices__filters">
-          <li class="prices__filters-item prices__filters-item--title">Розовый фильтр</li>
-          <li class="prices__filters-item">
+        <ul class="prices__row">
+          <li class="prices__item prices__item--title">Розовый фильтр</li>
+          <li class="prices__item">
             <img src="/img/yes.png" alt="Support"></li>
-          <li class="prices__filters-item">
+          <li class="prices__item">
             <img src="/img/yes.png" alt="Support"></li>
-          <li class="prices__filters-item">
-            <img src="/img/yes.png" alt="Support"></li>
-        </ul>
-        <ul class="prices__filters">
-          <li class="prices__filters-item prices__filters-item--title">Смайлики</li>
-          <li class="prices__filters-item">
-            <img src="/img/no.png" alt="Not support"></li>
-          <li class="prices__filters-item">
-            <img src="/img/yes.png" alt="Support"></li>
-          <li class="prices__filters-item">
+          <li class="prices__item">
             <img src="/img/yes.png" alt="Support"></li>
         </ul>
-        <ul class="prices__filters">
-          <li class="prices__filters-item prices__filters-item--title">Комментарии</li>
-          <li class="prices__filters-item">
+        <ul class="prices__row">
+          <li class="prices__item prices__item--title">Смайлики</li>
+          <li class="prices__item">
             <img src="/img/no.png" alt="Not support"></li>
-          <li class="prices__filters-item">
+          <li class="prices__item">
+            <img src="/img/yes.png" alt="Support"></li>
+          <li class="prices__item">
+            <img src="/img/yes.png" alt="Support"></li>
+        </ul>
+        <ul class="prices__row">
+          <li class="prices__item prices__item--title">Комментарии</li>
+          <li class="prices__item">
             <img src="/img/no.png" alt="Not support"></li>
-          <li class="prices__filters-item">
+          <li class="prices__item">
+            <img src="/img/no.png" alt="Not support"></li>
+          <li class="prices__item">
             <img src="/img/yes.png" alt="Support"></li>
         </ul>
       </div>
@@ -346,7 +337,7 @@
   </section>
   <section class="contacts">
     <div class="container">
-      <h2 class="title contacts--title">
+      <h2 class="title title--max-width-470">
         Остались вопросы? Свяжитесь с нами!
       </h2>
       <div class="contacts__wrapper">
