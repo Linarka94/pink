@@ -34,37 +34,6 @@
     }
   }
 
-  &--flex {
-    @media (max-width: 768px) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-
-      &::before {
-        // content: url('/img/Iphone-before.png');
-        content: '';
-        background-image: url('/img/Iphone-before.png');
-        background-repeat: no-repeat;
-        width: 268px;
-        height: 484px;
-
-        @media (max-width: 480px) {
-          margin-top: 45px;
-          width: 160px;
-          height: 280px;
-          background-size: contain;
-        }
-      }
-    }
-  
-    @media (max-width: 480px) {
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
